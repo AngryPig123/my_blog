@@ -1,0 +1,13 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<header th:fragment="header">
+    <nav class="main-menu">
+        <ul>
+            <th:block th:each="oneDeps : ${oneDepsMenuList}">
+                <li><a th:text="${oneDeps.oneDepsName}">Home</a></li>
+            </th:block>
+        </ul>
+    </nav>
+</header>
+
+</html>

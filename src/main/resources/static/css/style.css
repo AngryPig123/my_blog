@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% 높이로 설정 */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #eee;
+    padding: 1rem;
+    width: 10%;
+    float: left;
+    min-height: 1500px;
+}
+
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-menu a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    flex: 1; /* 메인 콘텐츠가 나머지 공간을 모두 차지하도록 설정 */
+    padding: 1rem;
+}
+
+/* div content 설정 */
+div.content {
+    width: 80%;
+    float: right;
+}

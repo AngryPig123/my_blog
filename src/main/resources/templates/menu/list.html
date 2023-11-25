@@ -1,0 +1,38 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:with="
+        table_div='relative overflow-x-auto',
+        table='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400',
+        thead='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400',
+        th='px-6 py-3',
+        tbody_tr='bg-white border-b dark:bg-gray-800 dark:border-gray-700',
+        td='px-6 py-4'
+">
+    <div th:class="${table_div}">
+        <table th:class="${table}">
+            <thead th:class="${thead}">
+            <tr>
+                <th scope="col" th:class="${th}">ID</th>
+                <th scope="col" th:class="${th}">Name</th>
+                <th scope="col" th:class="${th}">Created By</th>
+                <th scope="col" th:class="${th}">Updated By</th>
+                <th scope="col" th:class="${th}">Menu Grade</th>
+                <th scope="col" th:class="${th}">Used At</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:class="${tbody_tr}">
+            <tr th:each="oneDep : ${oneDepsMenuResList}">
+                <td th:class="${td}" th:text="${oneDep.oneDepsId}">ID</td>
+                <td th:class="${td}" th:text="${oneDep.oneDepsName}">Name</td>
+                <td th:class="${td}" th:text="${oneDep.oneDepsCreatedBy}">Created By</td>
+                <td th:class="${td}" th:text="${oneDep.oneDepsUpdatedBy}">Updated By</td>
+                <td th:class="${td}" th:text="${oneDep.oneDepsMenuGrade}">Menu Grade</td>
+                <td th:class="${td}" th:text="${oneDep.oneDepsUsedAt}">Used At</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</th:block>
+
+</html>

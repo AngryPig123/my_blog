@@ -1,0 +1,1285 @@
+2023-11-23 09:47:18.695  INFO 10356 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 10356 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 09:47:18.707  INFO 10356 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 09:47:21.186  INFO 10356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 09:47:21.199  INFO 10356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 09:47:21.199  INFO 10356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 09:47:21.373  INFO 10356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 09:47:21.374  INFO 10356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2304 ms
+2023-11-23 09:47:22.171  INFO 10356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 09:47:22.424  INFO 10356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 09:47:23.077  WARN 10356 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 09:47:23.157  INFO 10356 --- [main] com.example.demo.config.MultipartResolverConfig       : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@63f3366a
+2023-11-23 09:47:23.371  INFO 10356 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 09:47:23.371  INFO 10356 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default-markdown/**
+2023-11-23 09:47:23.372  INFO 10356 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 09:47:23.372  INFO 10356 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 09:47:23.898  INFO 10356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 09:47:23.917  INFO 10356 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.267 seconds (JVM running for 8.357)
+2023-11-23 09:47:29.456  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 09:47:29.457  INFO 10356 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 09:47:29.486  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:47:29.486  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 09:47:29.513  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:47:29.519  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:47:29.520  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 09:47:29.526  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:47:29.532  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:47:29.533  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 09:47:29.539  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:47:29.544  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:47:29.545  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 09:47:29.550  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:47:29.556  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:47:29.556  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 09:47:29.562  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:47:29.615  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:47:29.615  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 09:47:29.623  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:47:29.623  INFO 10356 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 09:47:29.623  INFO 10356 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 09:47:29.630  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:47:29.630  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 09:47:29.637  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:47:29.667  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700732849.jpg
+2023-11-23 09:47:29.672  INFO 10356 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700732849.jpg, userId=1)
+2023-11-23 09:47:29.747  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:47:29.768  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700732849.jpg
+2023-11-23 09:47:29.769  INFO 10356 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700732849.jpg, userId=1)
+2023-11-23 09:47:29.789  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:47:29.805  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700732849.jpg
+2023-11-23 09:47:29.806  INFO 10356 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700732849.jpg, userId=1)
+2023-11-23 09:47:29.865  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:47:29.892  INFO 10356 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700732849.jpg
+2023-11-23 09:47:29.893  INFO 10356 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700732849.jpg, userId=1)
+2023-11-23 09:47:29.908  INFO 10356 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-23 09:47:29.941 ERROR 10356 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:24)
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at com.example.demo.runnable.CommonRunnableService.defaultFileSetting(CommonRunnableService.java:67)
+	at com.example.demo.runnable.CommonRunnableService.initBucketDefaultImageFolder(CommonRunnableService.java:58)
+	at com.example.demo.runnable.BlogApplicationRunnerLocal.run(BlogApplicationRunnerLocal.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759)
+	... 5 common frames omitted
+
+2023-11-23 09:47:30.460  INFO 10356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 09:47:30.468  INFO 10356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 09:47:50.156  INFO 32520 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 32520 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 09:47:50.160  INFO 32520 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 09:47:51.839  INFO 32520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 09:47:51.849  INFO 32520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 09:47:51.850  INFO 32520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 09:47:51.975  INFO 32520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 09:47:51.975  INFO 32520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1470 ms
+2023-11-23 09:47:52.621  INFO 32520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 09:47:52.773  INFO 32520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 09:47:53.421  WARN 32520 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 09:47:53.510  INFO 32520 --- [main] com.example.demo.config.MultipartResolverConfig       : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@201a8ea7
+2023-11-23 09:47:53.713  INFO 32520 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 09:47:53.713  INFO 32520 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default-markdown/**
+2023-11-23 09:47:53.714  INFO 32520 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 09:47:53.714  INFO 32520 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 09:47:54.170  INFO 32520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 09:47:54.184  INFO 32520 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.709 seconds (JVM running for 5.885)
+2023-11-23 09:48:01.235  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 09:48:01.235  INFO 32520 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 09:48:01.261  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:48:01.262  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 09:48:01.292  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:48:01.298  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:48:01.298  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 09:48:01.305  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:48:01.355  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:48:01.355  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 09:48:01.362  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:48:01.370  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:48:01.371  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 09:48:01.376  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:48:01.383  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:48:01.384  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 09:48:01.390  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:48:01.396  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:48:01.396  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 09:48:01.403  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:48:01.403  INFO 32520 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 09:48:01.403  INFO 32520 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 09:48:01.411  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:48:01.411  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 09:48:01.418  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:48:01.450  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700732881.jpg
+2023-11-23 09:48:01.455  INFO 32520 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700732881.jpg, userId=1)
+2023-11-23 09:48:01.524  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:48:01.543  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700732881.jpg
+2023-11-23 09:48:01.544  INFO 32520 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700732881.jpg, userId=1)
+2023-11-23 09:48:01.564  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:48:01.580  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700732881.jpg
+2023-11-23 09:48:01.580  INFO 32520 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700732881.jpg, userId=1)
+2023-11-23 09:48:01.596  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:48:01.615  INFO 32520 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700732881.jpg
+2023-11-23 09:48:01.616  INFO 32520 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700732881.jpg, userId=1)
+2023-11-23 09:48:01.630  INFO 32520 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-23 09:48:01.657 ERROR 32520 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:24)
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at com.example.demo.runnable.CommonRunnableService.defaultFileSetting(CommonRunnableService.java:67)
+	at com.example.demo.runnable.CommonRunnableService.initBucketDefaultImageFolder(CommonRunnableService.java:58)
+	at com.example.demo.runnable.BlogApplicationRunnerLocal.run(BlogApplicationRunnerLocal.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759)
+	... 5 common frames omitted
+
+2023-11-23 09:48:02.192  INFO 32520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 09:48:02.205  INFO 32520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 09:49:20.762  INFO 33824 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 33824 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 09:49:20.765  INFO 33824 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 09:49:21.889  INFO 33824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 09:49:21.899  INFO 33824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 09:49:21.900  INFO 33824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 09:49:22.048  INFO 33824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 09:49:22.048  INFO 33824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1078 ms
+2023-11-23 09:49:22.652  INFO 33824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 09:49:22.815  INFO 33824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 09:49:23.346  WARN 33824 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 09:49:23.411  INFO 33824 --- [main] com.example.demo.config.MultipartResolverConfig       : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@4f2544b0
+2023-11-23 09:49:23.614  INFO 33824 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 09:49:23.615  INFO 33824 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 09:49:23.615  INFO 33824 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 09:49:23.615  INFO 33824 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 09:49:24.055  INFO 33824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 09:49:24.066  INFO 33824 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.784 seconds (JVM running for 4.896)
+2023-11-23 09:49:30.161  INFO 33824 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-23 09:49:30.182 ERROR 33824 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:24)
+Caused by: software.amazon.awssdk.core.exception.SdkClientException: Unable to execute HTTP request: The target server failed to respond
+	at software.amazon.awssdk.core.exception.SdkClientException$BuilderImpl.build(SdkClientException.java:98)
+	at software.amazon.awssdk.core.exception.SdkClientException.create(SdkClientException.java:43)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.utils.RetryableStageHelper.setLastException(RetryableStageHelper.java:198)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:66)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:34)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:56)
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:36)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.executeWithTimer(ApiCallTimeoutTrackingStage.java:80)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:60)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:42)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:48)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:31)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:37)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:26)
+	at software.amazon.awssdk.core.internal.http.AmazonSyncHttpClient$RequestExecutionBuilderImpl.execute(AmazonSyncHttpClient.java:193)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.invoke(BaseSyncClientHandler.java:135)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.doExecute(BaseSyncClientHandler.java:161)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:114)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:169)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:95)
+	at software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45)
+	at software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:55)
+	at software.amazon.awssdk.services.s3.DefaultS3Client.createBucket(DefaultS3Client.java:1072)
+	at com.example.demo.common.file.service.s3.S3ServiceImpl.createBucket(S3ServiceImpl.java:25)
+	at com.example.demo.runnable.CommonRunnableService.createLocalStackBucket(CommonRunnableService.java:28)
+	at com.example.demo.runnable.BlogApplicationRunnerLocal.run(BlogApplicationRunnerLocal.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759)
+	... 5 common frames omitted
+Caused by: org.apache.http.NoHttpResponseException: The target server failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at software.amazon.awssdk.http.apache.internal.impl.ApacheSdkHttpClient.execute(ApacheSdkHttpClient.java:72)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient.execute(ApacheHttpClient.java:253)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient.access$500(ApacheHttpClient.java:106)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient$1.call(ApacheHttpClient.java:232)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient$1.call(ApacheHttpClient.java:229)
+	at software.amazon.awssdk.core.internal.util.MetricUtils.measureDurationUnsafe(MetricUtils.java:64)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.MakeHttpRequestStage.executeHttpRequest(MakeHttpRequestStage.java:76)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.MakeHttpRequestStage.execute(MakeHttpRequestStage.java:55)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.MakeHttpRequestStage.execute(MakeHttpRequestStage.java:39)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:73)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:42)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:78)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:40)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:50)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:36)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:64)
+	... 31 common frames omitted
+
+2023-11-23 09:49:30.688  INFO 33824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 09:49:30.697  INFO 33824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 09:49:55.735  INFO 13236 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 13236 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 09:49:55.740  INFO 13236 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 09:49:58.503  INFO 13236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 09:49:58.516  INFO 13236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 09:49:58.517  INFO 13236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 09:49:58.744  INFO 13236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 09:49:58.745  INFO 13236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2379 ms
+2023-11-23 09:49:59.551  INFO 13236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 09:49:59.760  INFO 13236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 09:50:00.577  WARN 13236 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 09:50:00.677  INFO 13236 --- [main] com.example.demo.config.MultipartResolverConfig       : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@33356666
+2023-11-23 09:50:00.956  INFO 13236 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 09:50:00.957  INFO 13236 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 09:50:00.957  INFO 13236 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 09:50:00.958  INFO 13236 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 09:50:01.559  INFO 13236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 09:50:01.576  INFO 13236 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.265 seconds (JVM running for 15.153)
+2023-11-23 09:50:08.352  INFO 13236 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-23 09:50:08.392 ERROR 13236 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:24)
+Caused by: software.amazon.awssdk.core.exception.SdkClientException: Unable to execute HTTP request: The target server failed to respond
+	at software.amazon.awssdk.core.exception.SdkClientException$BuilderImpl.build(SdkClientException.java:98)
+	at software.amazon.awssdk.core.exception.SdkClientException.create(SdkClientException.java:43)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.utils.RetryableStageHelper.setLastException(RetryableStageHelper.java:198)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:66)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:34)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:56)
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:36)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.executeWithTimer(ApiCallTimeoutTrackingStage.java:80)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:60)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:42)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:48)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:31)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:37)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:26)
+	at software.amazon.awssdk.core.internal.http.AmazonSyncHttpClient$RequestExecutionBuilderImpl.execute(AmazonSyncHttpClient.java:193)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.invoke(BaseSyncClientHandler.java:135)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.doExecute(BaseSyncClientHandler.java:161)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:114)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:169)
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:95)
+	at software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45)
+	at software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:55)
+	at software.amazon.awssdk.services.s3.DefaultS3Client.createBucket(DefaultS3Client.java:1072)
+	at com.example.demo.common.file.service.s3.S3ServiceImpl.createBucket(S3ServiceImpl.java:25)
+	at com.example.demo.runnable.CommonRunnableService.createLocalStackBucket(CommonRunnableService.java:28)
+	at com.example.demo.runnable.BlogApplicationRunnerLocal.run(BlogApplicationRunnerLocal.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759)
+	... 5 common frames omitted
+Caused by: org.apache.http.NoHttpResponseException: The target server failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at software.amazon.awssdk.http.apache.internal.impl.ApacheSdkHttpClient.execute(ApacheSdkHttpClient.java:72)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient.execute(ApacheHttpClient.java:253)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient.access$500(ApacheHttpClient.java:106)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient$1.call(ApacheHttpClient.java:232)
+	at software.amazon.awssdk.http.apache.ApacheHttpClient$1.call(ApacheHttpClient.java:229)
+	at software.amazon.awssdk.core.internal.util.MetricUtils.measureDurationUnsafe(MetricUtils.java:64)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.MakeHttpRequestStage.executeHttpRequest(MakeHttpRequestStage.java:76)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.MakeHttpRequestStage.execute(MakeHttpRequestStage.java:55)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.MakeHttpRequestStage.execute(MakeHttpRequestStage.java:39)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:73)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:42)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:78)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:40)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:50)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:36)
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:64)
+	... 31 common frames omitted
+
+2023-11-23 09:50:09.649  INFO 13236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 09:50:09.684  INFO 13236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 09:50:50.707  INFO 33024 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 33024 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 09:50:50.717  INFO 33024 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 09:50:54.489  INFO 33024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 09:50:54.506  INFO 33024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 09:50:54.507  INFO 33024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 09:50:54.774  INFO 33024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 09:50:54.775  INFO 33024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3235 ms
+2023-11-23 09:50:55.474  INFO 33024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 09:50:55.654  INFO 33024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 09:50:56.171  WARN 33024 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 09:50:56.240  INFO 33024 --- [main] com.example.demo.config.MultipartResolverConfig       : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@4ff9f715
+2023-11-23 09:50:56.436  INFO 33024 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 09:50:56.436  INFO 33024 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 09:50:56.436  INFO 33024 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 09:50:56.437  INFO 33024 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 09:50:56.850  INFO 33024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 09:50:56.862  INFO 33024 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 8.168 seconds (JVM running for 12.4)
+2023-11-23 09:51:03.801  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 09:51:03.802  INFO 33024 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 09:51:03.831  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:51:03.832  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 09:51:03.862  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:51:03.869  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:51:03.869  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 09:51:03.875  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:51:03.881  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:51:03.881  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 09:51:03.887  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:51:03.893  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:51:03.894  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 09:51:03.900  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:51:03.906  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:51:03.906  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 09:51:03.913  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:51:03.919  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:51:03.919  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 09:51:03.926  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:51:03.926  INFO 33024 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 09:51:03.926  INFO 33024 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 09:51:03.975  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 09:51:03.975  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 09:51:03.981  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 09:51:04.012  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700733063.jpg
+2023-11-23 09:51:04.018  INFO 33024 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700733063.jpg, userId=1)
+2023-11-23 09:51:04.090  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:51:04.106  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700733064.jpg
+2023-11-23 09:51:04.107  INFO 33024 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700733064.jpg, userId=1)
+2023-11-23 09:51:04.165  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:51:04.178  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700733064.jpg
+2023-11-23 09:51:04.179  INFO 33024 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700733064.jpg, userId=1)
+2023-11-23 09:51:04.191  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:51:04.212  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700733064.jpg
+2023-11-23 09:51:04.212  INFO 33024 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700733064.jpg, userId=1)
+2023-11-23 09:51:04.230  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 09:51:04.237  INFO 33024 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700733064.md
+2023-11-23 09:51:04.242  INFO 33024 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700733064.md, userId=1)
+2023-11-23 09:51:04.253  INFO 33024 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 09:51:04.258  INFO 33024 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 09:51:09.501  INFO 33024 --- [http-nio-8203-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 09:51:09.501  INFO 33024 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 09:51:09.502  INFO 33024 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-23 09:51:09.980  WARN 33024 --- [http-nio-8203-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [447] milliseconds.
+2023-11-23 09:51:10.020  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 09:51:10.021  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 09:51:10.023 ERROR 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 09:51:10.024  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 09:51:10.024 ERROR 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 09:51:10.024  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 09:51:10.024 ERROR 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 09:51:13.016  INFO 33024 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 09:51:13.017  INFO 33024 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 09:51:13.017 ERROR 33024 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 09:51:13.017  INFO 33024 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 09:51:13.017 ERROR 33024 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 09:51:13.017  INFO 33024 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 09:51:13.017 ERROR 33024 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 10:15:12.877  INFO 33024 --- [http-nio-8203-exec-10] c.e.d.c.resolver.BlogMultipartResolver   : file extension = png, size = 79660
+2023-11-23 10:15:34.608  INFO 33024 --- [http-nio-8203-exec-9] c.e.d.c.resolver.BlogMultipartResolver   : file extension = png, size = 79660
+2023-11-23 10:15:34.635  INFO 33024 --- [http-nio-8203-exec-9] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 10:15:34.635  INFO 33024 --- [http-nio-8203-exec-9] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/1/
+2023-11-23 10:15:34.644  INFO 33024 --- [http-nio-8203-exec-9] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 10:15:34.656  INFO 33024 --- [http-nio-8203-exec-9] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: board/file/1/id_check_1700734534.png
+2023-11-23 10:15:34.657  INFO 33024 --- [http-nio-8203-exec-9] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=id_check.png, size=79660, mimeType=image/png, extension=png, path=board/file/1/id_check_1700734534.png, userId=1)
+2023-11-23 10:15:36.814  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 10:15:36.814  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 10:15:36.815 ERROR 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 10:15:36.815  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 10:15:36.815 ERROR 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 10:15:36.815  INFO 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 10:15:36.815 ERROR 33024 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 17:19:56.963  INFO 32188 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 32188 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 17:19:56.965  INFO 32188 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 17:19:58.076  INFO 32188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 17:19:58.084  INFO 32188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 17:19:58.084  INFO 32188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 17:19:58.182  INFO 32188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 17:19:58.182  INFO 32188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+2023-11-23 17:19:58.594  INFO 32188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 17:19:58.723  INFO 32188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 17:19:59.294  WARN 32188 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 17:19:59.344  INFO 32188 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@76eadc5a
+2023-11-23 17:19:59.508  INFO 32188 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 17:19:59.508  INFO 32188 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 17:19:59.508  INFO 32188 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 17:19:59.509  INFO 32188 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 17:19:59.873  INFO 32188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 17:19:59.882  INFO 32188 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.375 seconds (JVM running for 5.104)
+2023-11-23 17:20:09.946  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 17:20:09.947  INFO 32188 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 17:20:09.987  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 17:20:09.988  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 17:20:10.030  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 17:20:10.039  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 17:20:10.040  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 17:20:10.057  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 17:20:10.071  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 17:20:10.072  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 17:20:10.108  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 17:20:10.124  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 17:20:10.124  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 17:20:10.152  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 17:20:10.167  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 17:20:10.168  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 17:20:10.182  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 17:20:10.241  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 17:20:10.242  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 17:20:10.267  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 17:20:10.267  INFO 32188 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 17:20:10.267  INFO 32188 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 17:20:10.282  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 17:20:10.282  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 17:20:10.296  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 17:20:10.379  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700760010.jpg
+2023-11-23 17:20:10.386  INFO 32188 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700760010.jpg, userId=1)
+2023-11-23 17:20:10.605  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 17:20:10.638  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700760010.jpg
+2023-11-23 17:20:10.639  INFO 32188 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700760010.jpg, userId=1)
+2023-11-23 17:20:10.667  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 17:20:10.693  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700760010.jpg
+2023-11-23 17:20:10.694  INFO 32188 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700760010.jpg, userId=1)
+2023-11-23 17:20:10.720  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 17:20:10.757  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700760010.jpg
+2023-11-23 17:20:10.757  INFO 32188 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700760010.jpg, userId=1)
+2023-11-23 17:20:10.781  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 17:20:10.793  INFO 32188 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700760010.md
+2023-11-23 17:20:10.797  INFO 32188 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700760010.md, userId=1)
+2023-11-23 17:20:10.811  INFO 32188 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 17:20:10.819  INFO 32188 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 17:20:42.871  INFO 32188 --- [http-nio-8203-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 17:20:42.872  INFO 32188 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 17:20:42.873  INFO 32188 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-23 17:20:43.328  WARN 32188 --- [http-nio-8203-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [432] milliseconds.
+2023-11-23 17:20:48.573  INFO 32188 --- [http-nio-8203-exec-1] com.example.demo.board.BoardController   : pathVariableMap = {contentId=test, boardId=test, userId=test}
+2023-11-23 17:20:48.619  INFO 32188 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 17:20:48.620  INFO 32188 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 17:20:48.620 ERROR 32188 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 17:20:48.621  INFO 32188 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 17:20:48.621 ERROR 32188 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 17:20:48.622  INFO 32188 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 17:20:48.622 ERROR 32188 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 18:43:40.708  INFO 11880 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 11880 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 18:43:40.714  INFO 11880 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 18:43:43.106  INFO 11880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 18:43:43.119  INFO 11880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 18:43:43.120  INFO 11880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 18:43:43.343  INFO 11880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 18:43:43.343  INFO 11880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2212 ms
+2023-11-23 18:43:44.396  INFO 11880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 18:43:44.605  INFO 11880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 18:43:45.483  WARN 11880 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 18:43:45.583  INFO 11880 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@12723c5d
+2023-11-23 18:43:45.812  INFO 11880 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 18:43:45.814  INFO 11880 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 18:43:45.814  INFO 11880 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 18:43:45.814  INFO 11880 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 18:43:46.551  INFO 11880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 18:43:46.569  INFO 11880 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.914 seconds (JVM running for 10.278)
+2023-11-23 18:43:55.796  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 18:43:55.796  INFO 11880 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 18:43:55.838  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:43:55.838  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 18:43:55.883  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:43:55.892  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:43:55.893  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 18:43:55.903  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:43:55.910  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:43:55.910  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 18:43:55.919  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:43:55.927  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:43:55.927  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 18:43:55.937  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:43:55.945  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:43:55.946  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 18:43:55.955  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:43:55.964  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:43:55.964  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 18:43:55.973  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:43:55.973  INFO 11880 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 18:43:55.973  INFO 11880 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 18:43:55.984  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:43:55.984  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 18:43:55.993  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:43:56.035  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700765035.jpg
+2023-11-23 18:43:56.045  INFO 11880 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700765035.jpg, userId=1)
+2023-11-23 18:43:56.138  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:43:56.157  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700765036.jpg
+2023-11-23 18:43:56.158  INFO 11880 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700765036.jpg, userId=1)
+2023-11-23 18:43:56.179  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:43:56.198  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700765036.jpg
+2023-11-23 18:43:56.198  INFO 11880 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700765036.jpg, userId=1)
+2023-11-23 18:43:56.216  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:43:56.244  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700765036.jpg
+2023-11-23 18:43:56.245  INFO 11880 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700765036.jpg, userId=1)
+2023-11-23 18:43:56.269  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:43:56.280  INFO 11880 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700765036.md
+2023-11-23 18:43:56.285  INFO 11880 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700765036.md, userId=1)
+2023-11-23 18:43:56.296  INFO 11880 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 18:43:56.305  INFO 11880 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 18:43:58.399  INFO 11880 --- [http-nio-8203-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 18:43:58.399  INFO 11880 --- [http-nio-8203-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 18:43:58.401  INFO 11880 --- [http-nio-8203-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-23 18:43:59.330  WARN 11880 --- [http-nio-8203-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [906] milliseconds.
+2023-11-23 18:43:59.359  WARN 11880 --- [http-nio-8203-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'userBoardContentVariable' for method parameter type UserBoardContentReq is not present]
+2023-11-23 18:54:56.518  INFO 11880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 18:54:56.531  INFO 11880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 18:55:03.388  INFO 13336 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 13336 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 18:55:03.391  INFO 13336 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 18:55:04.969  INFO 13336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 18:55:04.978  INFO 13336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 18:55:04.979  INFO 13336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 18:55:05.110  INFO 13336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 18:55:05.110  INFO 13336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1420 ms
+2023-11-23 18:55:05.792  INFO 13336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 18:55:06.025  INFO 13336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 18:55:06.999  WARN 13336 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 18:55:07.071  INFO 13336 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@8ce3f27
+2023-11-23 18:55:07.335  INFO 13336 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 18:55:07.336  INFO 13336 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 18:55:07.336  INFO 13336 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 18:55:07.337  INFO 13336 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 18:55:07.962  INFO 13336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 18:55:07.974  INFO 13336 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 5.325 seconds (JVM running for 7.832)
+2023-11-23 18:55:17.123  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 18:55:17.123  INFO 13336 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 18:55:17.172  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:55:17.172  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 18:55:17.225  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:55:17.236  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:55:17.237  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 18:55:17.248  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:55:17.257  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:55:17.257  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 18:55:17.269  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:55:17.278  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:55:17.279  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 18:55:17.288  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:55:17.297  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:55:17.298  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 18:55:17.308  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:55:17.317  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:55:17.317  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 18:55:17.328  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:55:17.329  INFO 13336 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 18:55:17.329  INFO 13336 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 18:55:17.343  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:55:17.343  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 18:55:17.355  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:55:17.405  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700765717.jpg
+2023-11-23 18:55:17.412  INFO 13336 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700765717.jpg, userId=1)
+2023-11-23 18:55:17.520  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:55:17.542  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700765717.jpg
+2023-11-23 18:55:17.543  INFO 13336 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700765717.jpg, userId=1)
+2023-11-23 18:55:17.575  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:55:17.598  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700765717.jpg
+2023-11-23 18:55:17.599  INFO 13336 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700765717.jpg, userId=1)
+2023-11-23 18:55:17.622  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:55:17.647  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700765717.jpg
+2023-11-23 18:55:17.648  INFO 13336 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700765717.jpg, userId=1)
+2023-11-23 18:55:17.669  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:55:17.680  INFO 13336 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700765717.md
+2023-11-23 18:55:17.684  INFO 13336 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700765717.md, userId=1)
+2023-11-23 18:55:17.695  INFO 13336 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 18:55:17.704  INFO 13336 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 18:55:20.363  INFO 13336 --- [http-nio-8203-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 18:55:20.365  INFO 13336 --- [http-nio-8203-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 18:55:20.367  INFO 13336 --- [http-nio-8203-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-23 18:55:21.305  WARN 13336 --- [http-nio-8203-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [904] milliseconds.
+2023-11-23 18:55:21.432 ERROR 13336 --- [http-nio-8203-exec-2] c.e.d.i.ExceptionLoggerInterceptor       : exception log = [/user/test/board/test/content/test, class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap'), {}, 284a74d8-a1f5-45b9-86ac-5d78aec20c8e]
+2023-11-23 18:55:21.439 ERROR 13336 --- [http-nio-8203-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap')] with root cause
+
+java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap')
+	at com.example.demo.config.resolver.UserBoardMultiPathVariableResolver.resolveArgument(MultiPathVariableResolver.java:28)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-11-23 18:55:45.742  INFO 13336 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 18:55:45.754  INFO 13336 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 18:55:52.000  INFO 31528 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 31528 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 18:55:52.003  INFO 31528 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 18:55:53.557  INFO 31528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 18:55:53.567  INFO 31528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 18:55:53.567  INFO 31528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 18:55:53.690  INFO 31528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 18:55:53.690  INFO 31528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1370 ms
+2023-11-23 18:55:54.218  INFO 31528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 18:55:54.374  INFO 31528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 18:55:55.074  WARN 31528 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 18:55:55.143  INFO 31528 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@26f480c6
+2023-11-23 18:55:55.333  INFO 31528 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 18:55:55.333  INFO 31528 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 18:55:55.333  INFO 31528 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 18:55:55.334  INFO 31528 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 18:55:55.781  INFO 31528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 18:55:55.793  INFO 31528 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.513 seconds (JVM running for 6.497)
+2023-11-23 18:56:03.054  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 18:56:03.055  INFO 31528 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 18:56:03.083  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:03.083  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 18:56:03.117  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:03.124  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:03.124  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 18:56:03.131  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:03.137  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:03.137  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 18:56:03.144  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:03.150  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:03.151  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 18:56:03.157  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:03.163  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:03.163  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 18:56:03.171  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:03.220  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:03.220  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 18:56:03.228  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:03.228  INFO 31528 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 18:56:03.228  INFO 31528 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 18:56:03.236  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:03.237  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 18:56:03.243  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:03.273  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700765763.jpg
+2023-11-23 18:56:03.279  INFO 31528 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700765763.jpg, userId=1)
+2023-11-23 18:56:03.343  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:03.360  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700765763.jpg
+2023-11-23 18:56:03.360  INFO 31528 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700765763.jpg, userId=1)
+2023-11-23 18:56:03.379  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:03.395  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700765763.jpg
+2023-11-23 18:56:03.395  INFO 31528 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700765763.jpg, userId=1)
+2023-11-23 18:56:03.412  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:03.433  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700765763.jpg
+2023-11-23 18:56:03.434  INFO 31528 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700765763.jpg, userId=1)
+2023-11-23 18:56:03.500  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:03.508  INFO 31528 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700765763.md
+2023-11-23 18:56:03.511  INFO 31528 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700765763.md, userId=1)
+2023-11-23 18:56:03.528  INFO 31528 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 18:56:03.534  INFO 31528 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 18:56:05.747  INFO 31528 --- [http-nio-8203-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 18:56:05.748  INFO 31528 --- [http-nio-8203-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 18:56:05.750  INFO 31528 --- [http-nio-8203-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-23 18:56:06.767  WARN 31528 --- [http-nio-8203-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [990] milliseconds.
+2023-11-23 18:56:06.846 ERROR 31528 --- [http-nio-8203-exec-2] c.e.d.i.ExceptionLoggerInterceptor       : exception log = [/user/test/board/test/content/test, class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap'), {}, 7a1bd157-e8da-4f06-8d9f-f783179713a0]
+2023-11-23 18:56:06.854 ERROR 31528 --- [http-nio-8203-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap')] with root cause
+
+java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap')
+	at com.example.demo.config.resolver.UserBoardMultiPathVariableResolver.resolveArgument(MultiPathVariableResolver.java:28)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-11-23 18:56:33.522  INFO 31528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 18:56:33.534  INFO 31528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 18:56:38.999  INFO 17296 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 17296 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 18:56:39.004  INFO 17296 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 18:56:40.494  INFO 17296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 18:56:40.504  INFO 17296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 18:56:40.504  INFO 17296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 18:56:40.625  INFO 17296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 18:56:40.625  INFO 17296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1335 ms
+2023-11-23 18:56:41.222  INFO 17296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 18:56:41.377  INFO 17296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 18:56:42.000  WARN 17296 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 18:56:42.063  INFO 17296 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@614cd187
+2023-11-23 18:56:42.290  INFO 17296 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 18:56:42.290  INFO 17296 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 18:56:42.290  INFO 17296 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 18:56:42.290  INFO 17296 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 18:56:42.825  INFO 17296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 18:56:42.840  INFO 17296 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.565 seconds (JVM running for 6.199)
+2023-11-23 18:56:50.079  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 18:56:50.079  INFO 17296 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 18:56:50.107  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:50.107  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 18:56:50.144  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:50.151  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:50.152  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 18:56:50.160  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:50.209  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:50.209  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 18:56:50.216  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:50.222  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:50.222  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 18:56:50.228  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:50.234  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:50.234  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 18:56:50.241  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:50.246  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:50.247  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 18:56:50.254  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:50.255  INFO 17296 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 18:56:50.255  INFO 17296 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 18:56:50.262  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 18:56:50.262  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 18:56:50.269  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 18:56:50.303  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700765810.jpg
+2023-11-23 18:56:50.308  INFO 17296 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700765810.jpg, userId=1)
+2023-11-23 18:56:50.375  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:50.389  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700765810.jpg
+2023-11-23 18:56:50.390  INFO 17296 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700765810.jpg, userId=1)
+2023-11-23 18:56:50.451  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:50.466  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700765810.jpg
+2023-11-23 18:56:50.467  INFO 17296 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700765810.jpg, userId=1)
+2023-11-23 18:56:50.481  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:50.498  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700765810.jpg
+2023-11-23 18:56:50.498  INFO 17296 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700765810.jpg, userId=1)
+2023-11-23 18:56:50.515  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 18:56:50.523  INFO 17296 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700765810.md
+2023-11-23 18:56:50.526  INFO 17296 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700765810.md, userId=1)
+2023-11-23 18:56:50.536  INFO 17296 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 18:56:50.540  INFO 17296 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 19:00:26.068  INFO 17296 --- [http-nio-8203-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 19:00:26.070  INFO 17296 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 19:00:26.072  INFO 17296 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-23 19:00:26.677  WARN 17296 --- [http-nio-8203-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [579] milliseconds.
+2023-11-23 19:00:26.753 ERROR 17296 --- [http-nio-8203-exec-1] c.e.d.i.ExceptionLoggerInterceptor       : exception log = [/user/test/board/test/content/test, For input string: "test", {}, 5cd447e0-f826-4686-b65b-edf45aeed099]
+2023-11-23 19:00:26.761 ERROR 17296 --- [http-nio-8203-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "test"] with root cause
+
+java.lang.NumberFormatException: For input string: "test"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Long.parseLong(Long.java:692)
+	at java.base/java.lang.Long.valueOf(Long.java:1144)
+	at com.example.demo.config.resolver.UserBoardMultiPathVariableResolver.resolveArgument(MultiPathVariableResolver.java:28)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-11-23 19:00:35.582  INFO 17296 --- [http-nio-8203-exec-5] com.example.demo.board.BoardController   : pathVariableMap = UserBoardContentVariable(userId=3, boardId=3, contentId=3)
+2023-11-23 19:00:35.624  INFO 17296 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 19:00:35.625  INFO 17296 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:00:35.625 ERROR 17296 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:00:35.626  INFO 17296 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:00:35.626 ERROR 17296 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:00:35.628  INFO 17296 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:00:35.628 ERROR 17296 --- [http-nio-8203-exec-5] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:04:16.388  INFO 32424 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 32424 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 19:04:16.392  INFO 32424 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 19:04:17.992  INFO 32424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 19:04:18.002  INFO 32424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 19:04:18.002  INFO 32424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 19:04:18.133  INFO 32424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 19:04:18.133  INFO 32424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1451 ms
+2023-11-23 19:04:18.674  INFO 32424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 19:04:18.833  INFO 32424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 19:04:19.503  WARN 32424 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 19:04:19.576  INFO 32424 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@26f480c6
+2023-11-23 19:04:19.763  INFO 32424 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 19:04:19.764  INFO 32424 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 19:04:19.764  INFO 32424 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 19:04:19.765  INFO 32424 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 19:04:20.223  INFO 32424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 19:04:20.234  INFO 32424 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.664 seconds (JVM running for 6.438)
+2023-11-23 19:04:28.572  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 19:04:28.573  INFO 32424 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 19:04:28.607  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:04:28.607  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 19:04:28.641  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:04:28.648  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:04:28.649  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 19:04:28.657  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:04:28.664  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:04:28.664  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 19:04:28.670  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:04:28.677  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:04:28.677  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 19:04:28.683  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:04:28.689  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:04:28.690  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 19:04:28.697  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:04:28.703  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:04:28.703  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 19:04:28.710  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:04:28.711  INFO 32424 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 19:04:28.711  INFO 32424 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 19:04:28.718  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:04:28.718  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 19:04:28.724  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:04:28.753  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700766268.jpg
+2023-11-23 19:04:28.757  INFO 32424 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700766268.jpg, userId=1)
+2023-11-23 19:04:28.824  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:04:28.842  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700766268.jpg
+2023-11-23 19:04:28.843  INFO 32424 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700766268.jpg, userId=1)
+2023-11-23 19:04:28.863  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:04:28.881  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700766268.jpg
+2023-11-23 19:04:28.881  INFO 32424 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700766268.jpg, userId=1)
+2023-11-23 19:04:28.940  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:04:28.958  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700766268.jpg
+2023-11-23 19:04:28.959  INFO 32424 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700766268.jpg, userId=1)
+2023-11-23 19:04:28.975  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:04:28.981  INFO 32424 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700766268.md
+2023-11-23 19:04:28.984  INFO 32424 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700766268.md, userId=1)
+2023-11-23 19:04:28.992  INFO 32424 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 19:04:28.996  INFO 32424 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 19:04:30.090  INFO 32424 --- [http-nio-8203-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 19:04:30.091  INFO 32424 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 19:04:30.093  INFO 32424 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-23 19:04:31.066  WARN 32424 --- [http-nio-8203-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [949] milliseconds.
+2023-11-23 19:04:31.148 ERROR 32424 --- [http-nio-8203-exec-1] c.e.d.i.ExceptionLoggerInterceptor       : exception log = [/user/3/board/3/content/3, casting exception, {}, 09a43bce-efdf-42fc-9883-9e9191e6faf4]
+2023-11-23 19:04:31.155 ERROR 32424 --- [http-nio-8203-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: casting exception] with root cause
+
+java.lang.RuntimeException: casting exception
+	at com.example.demo.config.resolver.UserBoardMultiPathVariableResolver.resolveArgument(MultiPathVariableResolver.java:29)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-11-23 19:06:55.047  INFO 32424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 19:06:55.059  INFO 32424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 19:07:02.739  INFO 36848 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 36848 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 19:07:02.745  INFO 36848 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 19:07:04.609  INFO 36848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 19:07:04.619  INFO 36848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 19:07:04.620  INFO 36848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 19:07:04.785  INFO 36848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 19:07:04.785  INFO 36848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1581 ms
+2023-11-23 19:07:05.548  INFO 36848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 19:07:05.743  INFO 36848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 19:07:06.699  WARN 36848 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 19:07:06.767  INFO 36848 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@23f8036d
+2023-11-23 19:07:06.965  INFO 36848 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 19:07:06.966  INFO 36848 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 19:07:06.966  INFO 36848 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 19:07:06.966  INFO 36848 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 19:07:07.373  INFO 36848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 19:07:07.386  INFO 36848 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 5.478 seconds (JVM running for 7.739)
+2023-11-23 19:07:14.962  INFO 36848 --- [http-nio-8203-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 19:07:14.964  INFO 36848 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 19:07:14.967  INFO 36848 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-23 19:07:15.457  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 19:07:15.457  INFO 36848 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 19:07:15.505  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:07:15.505  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 19:07:15.559  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:07:15.567  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:07:15.567  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 19:07:15.577  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:07:15.586  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:07:15.586  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 19:07:15.597  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:07:15.606  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:07:15.607  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 19:07:15.616  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:07:15.626  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:07:15.626  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 19:07:15.635  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:07:15.645  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:07:15.645  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 19:07:15.657  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:07:15.657  INFO 36848 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 19:07:15.657  INFO 36848 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 19:07:15.671  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:07:15.672  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 19:07:15.685  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:07:15.738  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700766435.jpg
+2023-11-23 19:07:15.747  INFO 36848 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700766435.jpg, userId=1)
+2023-11-23 19:07:15.853  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:07:15.876  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700766435.jpg
+2023-11-23 19:07:15.876  INFO 36848 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700766435.jpg, userId=1)
+2023-11-23 19:07:15.950  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:07:15.988  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700766435.jpg
+2023-11-23 19:07:15.989  INFO 36848 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700766435.jpg, userId=1)
+2023-11-23 19:07:16.014  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:07:16.047  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700766436.jpg
+2023-11-23 19:07:16.048  INFO 36848 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700766436.jpg, userId=1)
+2023-11-23 19:07:16.117  WARN 36848 --- [http-nio-8203-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,115] milliseconds.
+2023-11-23 19:07:16.123  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:07:16.142  INFO 36848 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700766436.md
+2023-11-23 19:07:16.147  INFO 36848 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700766436.md, userId=1)
+2023-11-23 19:07:16.154  INFO 36848 --- [http-nio-8203-exec-1] com.example.demo.board.BoardController   : pathVariableMap = UserBoardContentVariable(userId=null, boardId=null, contentId=null, pathVariables={contentId=3, boardId=3, userId=3})
+2023-11-23 19:07:16.172  INFO 36848 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 19:07:16.182  INFO 36848 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 19:07:16.227  INFO 36848 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 19:07:16.229  INFO 36848 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:07:16.229 ERROR 36848 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:07:16.230  INFO 36848 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:07:16.231 ERROR 36848 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:07:16.232  INFO 36848 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:07:16.232 ERROR 36848 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:07:24.440  INFO 36848 --- [http-nio-8203-exec-2] com.example.demo.board.BoardController   : pathVariableMap = UserBoardContentVariable(userId=null, boardId=null, contentId=null, pathVariables={contentId=3, boardId=3, userId=3})
+2023-11-23 19:07:24.448  INFO 36848 --- [http-nio-8203-exec-2] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 19:07:24.448  INFO 36848 --- [http-nio-8203-exec-2] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:07:24.448 ERROR 36848 --- [http-nio-8203-exec-2] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:07:24.448  INFO 36848 --- [http-nio-8203-exec-2] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:07:24.448 ERROR 36848 --- [http-nio-8203-exec-2] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:07:24.448  INFO 36848 --- [http-nio-8203-exec-2] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:07:24.448 ERROR 36848 --- [http-nio-8203-exec-2] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:17:41.525  INFO 20788 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 20788 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 19:17:41.527  INFO 20788 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 19:17:42.731  INFO 20788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 19:17:42.738  INFO 20788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 19:17:42.739  INFO 20788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 19:17:42.841  INFO 20788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 19:17:42.841  INFO 20788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1122 ms
+2023-11-23 19:17:43.278  INFO 20788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 19:17:43.418  INFO 20788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 19:17:43.911  WARN 20788 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 19:17:43.959  INFO 20788 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@e7d0db2
+2023-11-23 19:17:44.111  INFO 20788 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 19:17:44.111  INFO 20788 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 19:17:44.111  INFO 20788 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 19:17:44.111  INFO 20788 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 19:17:44.432  INFO 20788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 19:17:44.443  INFO 20788 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.406 seconds (JVM running for 4.769)
+2023-11-23 19:17:51.645  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 19:17:51.646  INFO 20788 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 19:17:51.675  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:17:51.676  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 19:17:51.704  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:17:51.709  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:17:51.709  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 19:17:51.716  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:17:51.721  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:17:51.721  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 19:17:51.728  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:17:51.779  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:17:51.779  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 19:17:51.788  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:17:51.795  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:17:51.795  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 19:17:51.802  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:17:51.807  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:17:51.807  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 19:17:51.812  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:17:51.812  INFO 20788 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 19:17:51.813  INFO 20788 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 19:17:51.820  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:17:51.820  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 19:17:51.825  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:17:51.850  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700767071.jpg
+2023-11-23 19:17:51.854  INFO 20788 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700767071.jpg, userId=1)
+2023-11-23 19:17:51.912  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:17:51.925  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700767071.jpg
+2023-11-23 19:17:51.926  INFO 20788 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700767071.jpg, userId=1)
+2023-11-23 19:17:51.941  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:17:51.953  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700767071.jpg
+2023-11-23 19:17:51.954  INFO 20788 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700767071.jpg, userId=1)
+2023-11-23 19:17:51.970  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:17:51.987  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700767071.jpg
+2023-11-23 19:17:51.987  INFO 20788 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700767071.jpg, userId=1)
+2023-11-23 19:17:52.000  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:17:52.007  INFO 20788 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700767072.md
+2023-11-23 19:17:52.009  INFO 20788 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700767072.md, userId=1)
+2023-11-23 19:17:52.016  INFO 20788 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 19:17:52.020  INFO 20788 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 19:17:56.438  INFO 20788 --- [http-nio-8203-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 19:17:56.439  INFO 20788 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 19:17:56.439  INFO 20788 --- [http-nio-8203-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-23 19:17:57.003  WARN 20788 --- [http-nio-8203-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [542] milliseconds.
+2023-11-23 19:17:57.017  INFO 20788 --- [http-nio-8203-exec-1] com.example.demo.board.BoardController   : pathVariableMap = UserBoardContentVariable(userId=null, boardId=null, contentId=null)
+2023-11-23 19:17:57.051  INFO 20788 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 19:17:57.053  INFO 20788 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:17:57.053 ERROR 20788 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:17:57.053  INFO 20788 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:17:57.053 ERROR 20788 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:17:57.054  INFO 20788 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:17:57.054 ERROR 20788 --- [http-nio-8203-exec-1] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:18:36.985  INFO 20788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-23 19:18:36.994  INFO 20788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-23 19:18:41.789  INFO 19940 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 19940 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-23 19:18:41.793  INFO 19940 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-23 19:18:43.079  INFO 19940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-23 19:18:43.094  INFO 19940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-23 19:18:43.095  INFO 19940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-23 19:18:43.250  INFO 19940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-23 19:18:43.250  INFO 19940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1233 ms
+2023-11-23 19:18:43.828  INFO 19940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-23 19:18:43.971  INFO 19940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-23 19:18:44.701  WARN 19940 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-23 19:18:44.856  INFO 19940 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@26f480c6
+2023-11-23 19:18:45.221  INFO 19940 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-23 19:18:45.222  INFO 19940 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-23 19:18:45.222  INFO 19940 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-23 19:18:45.223  INFO 19940 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-23 19:18:45.894  INFO 19940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-23 19:18:45.917  INFO 19940 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.774 seconds (JVM running for 6.123)
+2023-11-23 19:18:54.303  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : create bucket = integrated
+2023-11-23 19:18:54.303  INFO 19940 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING START ========================================
+2023-11-23 19:18:54.333  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:18:54.335  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/
+2023-11-23 19:18:54.366  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:18:54.372  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:18:54.372  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = profile/image/
+2023-11-23 19:18:54.379  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:18:54.430  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:18:54.430  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/
+2023-11-23 19:18:54.438  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:18:54.446  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:18:54.446  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = board/file/
+2023-11-23 19:18:54.453  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:18:54.458  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:18:54.459  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/
+2023-11-23 19:18:54.464  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:18:54.469  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:18:54.470  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/
+2023-11-23 19:18:54.476  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:18:54.476  INFO 19940 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== S3 BUCKET, FOLDER SETTING END ========================================
+2023-11-23 19:18:54.476  INFO 19940 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING START ========================================
+2023-11-23 19:18:54.483  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : not doesFolderExist for s3
+2023-11-23 19:18:54.484  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : folderName = site/file/1/
+2023-11-23 19:18:54.489  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : success create folder for s3
+2023-11-23 19:18:54.516  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_1_1700767134.jpg
+2023-11-23 19:18:54.522  INFO 19940 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_1.jpg, size=378710, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_1_1700767134.jpg, userId=1)
+2023-11-23 19:18:54.591  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:18:54.606  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_2_1700767134.jpg
+2023-11-23 19:18:54.607  INFO 19940 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_2.jpg, size=336251, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_2_1700767134.jpg, userId=1)
+2023-11-23 19:18:54.628  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:18:54.641  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_3_1700767134.jpg
+2023-11-23 19:18:54.641  INFO 19940 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_3.jpg, size=332471, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_3_1700767134.jpg, userId=1)
+2023-11-23 19:18:54.656  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:18:54.672  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/default_4_1700767134.jpg
+2023-11-23 19:18:54.673  INFO 19940 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=default_4.jpg, size=554665, mimeType=image/jpeg, extension=jpg, path=site/file/1/default_4_1700767134.jpg, userId=1)
+2023-11-23 19:18:54.690  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : doesFolderExist for s3
+2023-11-23 19:18:54.696  INFO 19940 --- [main] c.e.d.c.file.service.s3.S3ServiceImpl    : File uploaded successfully to S3. Bucket: integrated, Key: site/file/1/markdown1_1700767134.md
+2023-11-23 19:18:54.699  INFO 19940 --- [main] c.e.d.u.service.UserProfileServiceImpl   : insertOrUpdate = FileInfo.InsertOrUpdate(name=markdown1.md, size=1896, mimeType=text/markdown, extension=md, path=site/file/1/markdown1_1700767134.md, userId=1)
+2023-11-23 19:18:54.709  INFO 19940 --- [main] c.e.demo.runnable.CommonRunnableService  : ======================================== DEFAULT IMAGE SETTING END ========================================
+2023-11-23 19:18:54.714  INFO 19940 --- [main] c.e.demo.runnable.CommonRunnableService  : link = http://localhost:8203
+2023-11-23 19:18:57.443  INFO 19940 --- [http-nio-8203-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 19:18:57.444  INFO 19940 --- [http-nio-8203-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-23 19:18:57.446  INFO 19940 --- [http-nio-8203-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-23 19:18:57.986  WARN 19940 --- [http-nio-8203-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [509] milliseconds.
+2023-11-23 19:18:58.000  INFO 19940 --- [http-nio-8203-exec-4] com.example.demo.board.BoardController   : pathVariableMap = UserBoardContentVariable(userId=3, boardId=3, contentId=3)
+2023-11-23 19:18:58.030  INFO 19940 --- [http-nio-8203-exec-4] c.e.d.menu.service.BlogMenuServiceImpl   : baseMenuRes = []
+2023-11-23 19:18:58.031  INFO 19940 --- [http-nio-8203-exec-4] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:18:58.031 ERROR 19940 --- [http-nio-8203-exec-4] c.e.d.menu.service.BlogMenuServiceImpl   : oneDepsList = []
+2023-11-23 19:18:58.032  INFO 19940 --- [http-nio-8203-exec-4] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:18:58.032 ERROR 19940 --- [http-nio-8203-exec-4] c.e.d.menu.service.BlogMenuServiceImpl   : twoDepsList = []
+2023-11-23 19:18:58.033  INFO 19940 --- [http-nio-8203-exec-4] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-23 19:18:58.033 ERROR 19940 --- [http-nio-8203-exec-4] c.e.d.menu.service.BlogMenuServiceImpl   : threeDepsList = []
+2023-11-24 13:39:13.208  INFO 28896 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.19 on DESKTOP-AUA682K with PID 28896 (C:\Users\shgud\Desktop\blog\blog\build\classes\java\main started by shgud in C:\Users\shgud\Desktop\blog\blog)
+2023-11-24 13:39:13.217  INFO 28896 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2023-11-24 13:39:16.830  INFO 28896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8203 (http)
+2023-11-24 13:39:16.843  INFO 28896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-24 13:39:16.844  INFO 28896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-11-24 13:39:17.030  INFO 28896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-24 13:39:17.030  INFO 28896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3391 ms
+2023-11-24 13:39:17.940  INFO 28896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-24 13:39:18.230  INFO 28896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-24 13:39:19.837  WARN 28896 --- [main] n.sf.ehcache.config.CacheConfiguration   : Configuration problem for cache menuInfoCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2023-11-24 13:39:19.963  INFO 28896 --- [main] c.e.demo.config.MultipartResolverConfig  : blogFileProperties = com.example.demo.common.properties.properties.BlogFileProperties@12723c5d
+2023-11-24 13:39:20.305  INFO 28896 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /css/**
+2023-11-24 13:39:20.306  INFO 28896 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_image/**
+2023-11-24 13:39:20.306  INFO 28896 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /default_markdown/**
+2023-11-24 13:39:20.307  INFO 28896 --- [main] c.e.demo.config.CommonConfigPathService  : static resources = /js/**
+2023-11-24 13:39:21.050  INFO 28896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8203 (http) with context path ''
+2023-11-24 13:39:21.073  INFO 28896 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 8.747 seconds (JVM running for 11.41)

@@ -1,0 +1,18 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- 왼쪽에 2뎁스, 3뎁스 메뉴 배치 -->
+<aside th:fragment="side_menu" class="sidebar">
+    <th:block th:each="twoDeps : ${twoDepsMenuList}">
+        <nav class="sub-menu">
+            <span th:text="${twoDeps.twoDepsName}">deps2</span>
+
+            <th:block th:each="threeDeps : ${threeDepsMenuList}">
+                <th:block th:if="${twoDeps.twoDepsId == threeDeps.threeDepsParentMenuId}">
+                    <ul>
+                        <li th:text="${threeDeps.threeDepsName}">deps3</li>
+                    </ul>
+                </th:block>
+            </th:block>
+        </nav>
+    </th:block>
+</aside>
+</html>

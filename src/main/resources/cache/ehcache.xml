@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false">
+    <!--<diskStore path="java.io.tmpdir" />-->
+    <!-- path	스풀링 공간을 설정한다, 모든 캐시가 Memory store만을 사용하면 diskStore를 설정 할 필요가 없으나 여러개의 CacheManager를 사용한다면 여러 개의 diskStore 경로를 사용하는것이 효율적이다-->
+    <!-- ehcache 속성 -->
+    <!-- maxEntriesLocalHeap Heap 캐시 메모리 pool size 설정, GC대상이 됨.-->
+    <!-- maxMemoryOffHeap 캐시 메모리 pool size설정, EHCache가 관리하며 GC대상에서 제외.-->
+    <!-- maxEntriesLocalDisk Disk pool size 설정.-->
+    <diskStore path="java.io.tmpdir"/>
+
+    <!-- cache 속성 -->
+    <!-- name	캐시명.	필수	true-->
+    <!-- eternal	true일 경우 timeout 관련 설정이 무시, element가 캐시에서 삭제되지 않음.	false	true-->
+    <!-- timeToldleSeconds	Element가 지정한 시간 동안 사용(조회)되지 않으면 캐시에서 제거된다. 이 값이 0인 경우 조회 관련 만료 시간을 지정하지 않는다.	0	false-->
+    <!-- timeToLiveSeconds	Element가 존재하는 시간. 이 시간이 지나면 캐시에서 제거된다. 이 시간이 0이면 만료 시간을 지정하지 않는다.	0	false-->
+    <!-- diskPersistent	VM이 재 가동할 때 디스크 저장소에 캐싱된 객체를 저장할지의 여부를 지정한다.	false	false-->
+    <!-- diskExpiryThreadIntervalSeconds	Disk Expiry 쓰레드의 수행 시간 간격을 초 단위로 지정한다.	120	false-->
+    <!-- memoryStoreEvictionPolicy	객체의 개수가 maxElementsInMemory에 도달했을 때, 메모리에서 객체를 어떻게 제거할 지에 대한 정책을 지정한다. LRU, FIFO, LFU 지정 가능.-->
+    <cache name="menuInfoCache"
+           maxEntriesLocalHeap="10000"
+           maxEntriesLocalDisk="1000"
+           eternal="false"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="300" timeToLiveSeconds="600"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+</ehcache>

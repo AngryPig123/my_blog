@@ -1,0 +1,25 @@
+<!--resources/templates/layouts/default.html-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/js/layout.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<header th:replace="fragments/main/header::header"></header>
+
+<section id="container">
+    <aside th:replace="fragments/main/side_menu::side_menu"></aside>
+    <div layout:fragment="content" class="content"></div>
+</section>
+
+<footer th:replace="fragments/main/footer::footer"></footer>
+
+</body>
+</html>

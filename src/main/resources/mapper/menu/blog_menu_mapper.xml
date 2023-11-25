@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.menu.mapper.BlogMenuMapper">
+
+    <resultMap id="menuResultMap" type="com.example.demo.auth.MenuGrade">
+        <result column="menuGrade" property="menuGrade"/>
+    </resultMap>
+
+    <insert id="blogMenuInsert" parameterType="com.example.demo.menu.dto.req.BaseMenuReq" useGeneratedKeys="true" keyProperty="id">
+        <choose>
+            <when test='depsBranch.equals("one")'>
+                INSERT INTO one_deps_menu(name, menu_grade, used_at)
+                VALUES (#{name}, #{menuGrade}, #{usedAt})
+            </when>
+            <when test='depsBranch.equals("two")'>
+                INSERT INTO two_deps_menu(name, parent_menu_id, menu_grade, used_at)
+                VALUES (#{name}, #{parentMenuId}, #{menuGrade}, #{usedAt})
+            </when>
+            <when test='depsBranch.equals("three")'>
+                INSERT INTO three_deps_menu(name, parent_menu_id, menu_grade, used_at)
+                VALUES (#{name}, #{parentMenuId}, #{menuGrade}, #{usedAt})
+            </when>
+        </choose>
+    </insert>
+
+    <select id="blogMenuListAllSelect" resultType="com.example.demo.menu.dto.res.BaseMenuRes">
+        SELECT
+            one.id AS oneDepsId,
+            one.name AS oneDepsName,
+            one.created_date  AS oneDepsCreatedDate,
+            one.updated_date  AS oneDepsUpdatedDate,
+            one.created_by  AS oneDepsCreatedBy,
+            one.updated_by  AS oneDepsUpdatedBy,
+            one.menu_grade  AS oneDepsMenuGrade,
+            one.used_at  AS oneDepsUsedAt,
+            two.id AS twoDepsId,
+            two.parent_menu_id  AS twoDepsParentMenuId,
+            two.name AS twoDepsName,
+            two.created_date AS twoDepsCreatedDate,
+            two.updated_date AS twoDepsUpdatedDate,
+            two.created_by AS twoDepsCreatedBy,
+            two.updated_by  AS twoDepsUpdatedBy,
+            two.menu_grade  AS twoDepsMenuGrade,
+            two.used_at  AS twoDepsUsedAt,
+            three.id  AS threeDepsId,
+            three.parent_menu_id  AS threeDepsParentMenuId,
+            three.name  AS threeDepsName,
+            three.created_date  AS threeDepsCreatedDate,
+            three.updated_date  AS threeDepsUpdatedDate,
+            three.created_by  AS threeDepsCreatedBy,
+            three.updated_by  AS threeDepsUpdatedBy,
+            three.menu_grade  AS threeDepsMenuGrade,
+            three.used_at  AS threeDepsUsedAt
+        FROM one_deps_menu one
+                 LEFT OUTER JOIN two_deps_menu two ON two.parent_menu_id = one.id
+                 LEFT OUTER JOIN three_deps_menu three ON three.parent_menu_id = two.id
+        WHERE two.id IS NOT NULL AND three.id IS NOT NULL
+        ORDER BY one.sort, two.sort, three.sort
+    </select>
+
+    <select id="doesMenuExists" resultType="boolean">
+        SELECT
+            COUNT(*) > 0
+        FROM one_deps_menu one
+                 INNER JOIN two_deps_menu two ON two.parent_menu_id = one.id
+                 INNER  JOIN three_deps_menu three ON three.parent_menu_id = two.id
+        WHERE one.name = #{oneDepsName}
+        AND two.name = #{twoDepsName}
+        AND three.name = #{threeDepsName}
+    </select>
+
+</mapper>

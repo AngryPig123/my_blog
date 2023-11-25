@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.common.file.mapper.BlogCommonFileMapper">
+
+    <insert id="insertOrUpdateFile" parameterType="com.example.demo.common.file.dto.res.FileInfo$InsertOrUpdate">
+        INSERT INTO files (name, size, mime_type, extension, path, created_at, updated_at, user_id)
+        VALUES (#{name},
+                #{size},
+                #{mimeType},
+                #{extension},
+                #{path},
+                CURRENT_TIMESTAMP,
+                CURRENT_TIMESTAMP,
+                #{userId})
+        ON DUPLICATE KEY UPDATE name       = #{name},
+                                size       = #{size},
+                                mime_type  = #{mimeType},
+                                extension  = #{extension},
+                                path       = #{path},
+                                updated_at = CURRENT_TIMESTAMP,
+                                user_id    = #{userId}
+    </insert>
+
+    <select id="fileInfoList" parameterType="String" resultType="com.example.demo.common.file.dto.res.FileInfo$FileResult">
+        SELECT
+            name AS name,
+            mime_type AS mimeType,
+            extension AS extension,
+            CONCAT(#{filePrefix},path) AS path
+        FROM files
+    </select>
+
+</mapper>

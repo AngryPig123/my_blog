@@ -1,0 +1,71 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.16'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '11'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //	spring boot starter
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    //  cache + ehcache
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    //  ConcurrentMapCacheManager => ehcache로 변경.
+    implementation group: 'net.sf.ehcache', name: 'ehcache', version: '2.10.3'
+
+    //	database
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.1'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    //	thymeleaf
+    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+
+    //	aws, localstack
+    implementation "org.testcontainers:localstack:1.16.3"
+    implementation 'software.amazon.awssdk:s3:2.17.14'
+
+    //  multipart file resolver
+    implementation 'commons-fileupload:commons-fileupload:1.4'
+
+    // commonmark
+    implementation 'org.commonmark:commonmark:0.21.0'
+
+//    //  swagger
+//    implementation 'io.springfox:springfox-boot-starter'
+//    implementation 'io.springfox:springfox-swagger-ui'
+
+    //  lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    //  test implementation
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:2.3.1'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
