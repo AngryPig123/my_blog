@@ -9,6 +9,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Slf4j
 @Controller
 @RequestMapping
@@ -19,7 +21,12 @@ public class HomeController {
     private final RequestHolderService requestHolderService;
 
     @GetMapping
-    public String home(Model model) {
+    public String home(Model model, HttpServletRequest httpServletRequest) {
+        String remoteAddr = httpServletRequest.getRemoteAddr();
+
+
+        log.info("ip adress = {}", remoteAddr              );
+
         return "/home";
     }
 
